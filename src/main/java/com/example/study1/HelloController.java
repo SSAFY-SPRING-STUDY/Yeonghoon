@@ -10,6 +10,7 @@ public class HelloController {
 
     @Autowired
     public HelloController(HelloService helloService) {
+        // 깃허브 브랜치 테스트용 주석
         this.helloService = helloService;
     }
 
