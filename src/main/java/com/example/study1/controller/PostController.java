@@ -31,8 +31,8 @@ public class PostController {
         return postService.findAll();
     }
 
-    @GetMapping("/api/posts/{id}")
-    public PostResponse findPostById(@PathVariable long id){
-        PostResponse response =  postService.findByID(id);
-    }
+//    @GetMapping("/api/posts/{id}")
+//    public PostResponse findPostById(@PathVariable long id){
+//        PostResponse response =  postService.findByID(id);
+//    }
 }
