@@ -1,4 +1,5 @@
 package com.example.study1.entity;
+import com.example.study1.controller.dto.PostRequest;
 import lombok.Getter;
 
 @Getter
@@ -16,4 +17,10 @@ public class PostEntity {
         this.content = content;
         this.author = author;
     }
+
+    public void modify(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
+
 }

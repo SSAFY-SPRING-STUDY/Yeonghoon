@@ -1,5 +1,6 @@
 package com.example.study1.controller.dto;
 
+import com.example.study1.entity.PostEntity;
 import lombok.Getter;
 import org.springframework.stereotype.Component;
 
@@ -23,5 +24,9 @@ public class PostRequest {
                 ", content='" + content + '\'' +
                 ", author='" + author + '\'' +
                 '}';
+    }
+
+    public static PostEntity toEntity(PostRequest postRequest) {
+        return new PostEntity(postRequest.getTitle(), postRequest.getContent(), postRequest.getAuthor());
     }
 }

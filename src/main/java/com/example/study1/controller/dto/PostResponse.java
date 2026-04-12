@@ -1,5 +1,6 @@
 package com.example.study1.controller.dto;
 
+import com.example.study1.entity.PostEntity;
 import lombok.Getter;
 
 @Getter
@@ -14,5 +15,13 @@ public class PostResponse {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public static PostResponse fromEntity(PostEntity entity){
+        return new PostResponse(entity.getId(),
+                entity.getTitle(),
+                entity.getContent(),
+                entity.getAuthor()
+        );
     }
 }
