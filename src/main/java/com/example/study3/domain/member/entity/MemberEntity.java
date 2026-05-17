@@ -19,4 +19,8 @@ public class MemberEntity {
         this.name = name;
     }
 
+    public boolean isValidPassword(String password) {
+        return this.password.equals(password);
+    }
+
 }
