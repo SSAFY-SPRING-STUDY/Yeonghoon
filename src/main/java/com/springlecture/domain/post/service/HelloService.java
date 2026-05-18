@@ -1,4 +1,4 @@
-package com.example.study1;
+package com.springlecture.domain.post.service;
 
 import org.springframework.stereotype.Service;
 
